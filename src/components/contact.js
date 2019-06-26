@@ -11,7 +11,7 @@ class Contact extends Component {
      <MDBRow>
        <MDBCol md="7">
         <div className="formborder">
-         <form action="/resume.js" method="POST" name="contact" data-netlify="true"  data-netlify-honeypot="bot-field">
+         <form action="/main.js" method="POST" name="contact" data-netlify="true"  data-netlify-honeypot="bot-field">
           <input type="hidden" name="form-name" value="contact" />
            <p className="h4 text-center mb-4" style={{color: 'white'}}>Let's Talk!</p>
            <label htmlFor="defaultFormContactNameEx" className="white-text">

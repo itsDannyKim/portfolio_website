@@ -30,7 +30,7 @@ transition: 1s opacity;
 
 .landing-grid h1{
   text-shadow: 2px 2px 4px #073d45;
-  top: -220px;
+  top: -210px;
   margin-left: 4em;
   margin-top: 4em;
   margin-right: 4em;
@@ -70,7 +70,7 @@ transition: 1s opacity;
 
 .bottom-text-padding {
   position:relative;
-  top: -210px;
+  top: -200px;
 }
 
 .projects-grid {

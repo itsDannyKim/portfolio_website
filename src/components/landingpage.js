@@ -19,7 +19,7 @@ class Landing extends Component {
 
             <div className="banner-text">
             <a href="https://www.google.com/search?q=what+is+a+technology+consultant%3F&oq=what+is+a+technology+consultant%3F&aqs=chrome..69i57.2324j0j4&sourceid=chrome&ie=UTF-8" rel="noopener noreferrer" target="_blank">
-            <h1>Technology Consultant</h1></a>
+            <h1 style={{fontSize:'60px'}}>Full-Stack Software Engineer</h1></a>
           <div className="bottom-text-padding">
             <hr/>
           <p>HTML/CSS | Javascript | Java | SQL | MongoDB | Express | ReactJS | NodeJS  </p>
