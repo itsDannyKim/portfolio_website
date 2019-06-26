@@ -11,7 +11,7 @@ class Contact extends Component {
      <MDBRow>
        <MDBCol md="7">
         <div className="formborder">
-         <form action="POST" data-netlify="true">
+         <form name="contact" method="POST" data-netlify="true">
            <p className="h4 text-center mb-4" style={{color: 'white'}}>Let's Talk!</p>
            <label htmlFor="defaultFormContactNameEx" className="white-text">
              Name
