@@ -19,7 +19,7 @@ class Contact extends Component {
            </label>
            <input
              type="text"
-             id="defaultFormContactNameEx"
+             name="name"
              className="form-control"
            />
            <br />
@@ -28,7 +28,7 @@ class Contact extends Component {
            </label>
            <input
              type="email"
-             id="defaultFormContactEmailEx"
+             name="email"
              className="form-control"
            />
            <br />
@@ -40,7 +40,7 @@ class Contact extends Component {
            </label>
            <input
              type="text"
-             id="defaultFormContactSubjectEx"
+             name="subject"
              className="form-control"
            />
            <br />
@@ -52,7 +52,7 @@ class Contact extends Component {
            </label>
            <textarea
              type="text"
-             id="defaultFormContactMessageEx"
+             name="message"
              className="form-control"
              rows="3"
            />
