@@ -35,7 +35,7 @@ class About extends Component {
 
               <br></br>
               <br></br>
-              If you have any questions or want to have a conversation, feel free to <Link to="/contact" style={{color: '#8ce5f3  ', textDecoration: 'none', fontWeight:'bold'}}>connect</Link> with me to talk!
+              If you have any questions or want to start a conversation, feel free to <Link to="/contact" style={{color: '#8ce5f3  ', textDecoration: 'none', fontWeight:'bold'}}>connect</Link> with me!
               <br></br>
               <br></br>
               </p>
