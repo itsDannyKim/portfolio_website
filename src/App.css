@@ -14,12 +14,8 @@ transition: 1s opacity;
 
 }
 
-.header-color.fade-out{
-  opacity: 0;
-  transition: none;
-}
-
 .landing-grid {
+
   background: #304352;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #d7d2cc, #304352);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to left, #d7d2cc, #304352); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -29,15 +25,66 @@ transition: 1s opacity;
   left: 0;
   width: 100%;
   height: 100%;
+
+}
+
+.landing-grid h1{
+  text-shadow: 2px 2px 4px #073d45;
+  top: -220px;
+  margin-left: 4em;
+  margin-top: 4em;
+  margin-right: 4em;
+  background: none;
+  font-weight: bold;
+  position: relative;
+  transition:color 0.8s ease;
+}
+
+.landing-grid h1::after{
+
+  position: absolute;
+  content: '';
+  top:0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #5fc5ee;
+  transform-origin:left;
+  transition:width 1s ease;
+  z-index:-1;
+
+}
+
+.landing-grid h1:hover::after {
+
+  width: 100%;
+
+}
+
+.landing-grid h1:hover {
+
+  color: white;
+  transition: transform 1s ease-out;
+
+}
+
+.bottom-text-padding {
+  position:relative;
+  top: -210px;
 }
 
 .projects-grid {
+
   display: flex;
+
 }
 
 .headshot-img{
-  height: 250px;
-  padding-top: 5em;
+
+  height: 350px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+
 }
 
 .banner-text{
@@ -47,6 +94,7 @@ transition: 1s opacity;
   margin: auto;
   border-radius: 10px;
   height: 40%;
+  padding-top: 1px;
 }
 
 .banner-text h1 {
@@ -65,6 +113,7 @@ transition: 1s opacity;
   color: white;
   font-size: 20px;
   padding: 1em;
+
 }
 
 .specialEffects:hover{
@@ -72,9 +121,7 @@ transition: 1s opacity;
   transition-timing-function: ease-in;
   color: white ;
   background-color: #5fc5ee;
-  height: 90px;
   border-radius:50%;
-  width: 90px;
   opacity:2;
 }
 
@@ -87,18 +134,16 @@ transition: 1s opacity;
 
 .social-links i {
   color: white;
-  font-size: 5em;
-  padding: 8px;
+  font-size: 4em;
+  padding: 12px;
   border: 2px solid white;
-  height: 70px;
   border-radius:50%;
-  width: 70px;
   opacity:1;
 }
 
 /* About Me Page CSS */
 .pheadshot-img {
-  height: 250px;
+  height: 300px;
 }
 
 .aboutme-grid {
@@ -122,11 +167,20 @@ transition: 1s opacity;
 
 }
 
+.aboutme-head {
+  position: relative;
+  left: 10%;
+  top: 4.8em;
+}
 .aboutme-body  {
+  position: relative;
+  top: 5em;
+  right: 20%;
   font-family: 'Roboto', sans-serif;
   color: white;
-
   background-color: black;
+  padding: 5%;
+  padding-bottom: 1px;
   opacity: .8;
   margin: auto;
   border-radius: 10px;
@@ -151,42 +205,39 @@ transition: 1s opacity;
 
 }
 
-/* contact page css */
-.contact-body {
-  margin: auto;
-  position: fixed;
-  width: 100%;
+/* projects page css */
+
+.projects-grid {
+  position: relative;
+  top: 5px;
   height: 100%;
-  justify-content: center;
-  padding-top: 2em;
+  background: #304352;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #d7d2cc, #304352);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #d7d2cc, #304352); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
-.contact-grid {
-  text-align: center;
-  justify-content: center;
-  width: 80%;
-  height: 550px;
-  background: white;
-  color: black;
-  margin-bottom: 20px;
+.category-tabs{
+
+  background: #304352;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #d7d2cc, #304352);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #d7d2cc, #304352); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
-.contact-grid h2 {
-  font-family: 'Roboto', sans-serif;
+
+/* Contact Page */
+
+.MDBcontainer-color{
+  background: #304352;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #d7d2cc, #304352);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #d7d2cc, #304352); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
-.contact-grid p {
-  font-family: 'Oxygen', sans-serif;
-  font-weight: bold;
-}
+.formborder{
+  border-radius: 25px;
+  border: 2px solid white;
+  padding: 15px;
 
-.contact-grid hr{
-  border-top: 5px dotted black;
-  width: 50%;
-  margin: auto;
-}
-
-.contact-list i{
-  font-size: 66px;
-  padding-right: 5rem;
 }

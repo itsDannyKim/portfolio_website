@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import {Grid, Cell } from 'react-mdl';
 import kimDanielHeadshot from '../images/kimDanielHeadshot.jpg';
+import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBIcon } from 'mdbreact';
+
 
 
 class Landing extends Component {
@@ -16,8 +18,9 @@ class Landing extends Component {
           />
 
             <div className="banner-text">
-            <h1>Technology Consultant</h1>
-
+            <a href="https://www.google.com/search?q=what+is+a+technology+consultant%3F&oq=what+is+a+technology+consultant%3F&aqs=chrome..69i57.2324j0j4&sourceid=chrome&ie=UTF-8" rel="noopener noreferrer" target="_blank">
+            <h1>Technology Consultant</h1></a>
+          <div className="bottom-text-padding">
             <hr/>
           <p>HTML/CSS | Javascript | Java | SQL | MongoDB | Express | ReactJS | NodeJS  </p>
 
@@ -25,25 +28,27 @@ class Landing extends Component {
 
             {/* LinkedIn */}
             <a className="specialEffects" href="https://www.linkedin.com/in/danielkimdk/" rel="noopener noreferrer" target="_blank">
-              <i className="fa fa-linkedin-square" aria-hidden="true"/>
+              <MDBIcon fab icon="linkedin" />
             </a>
 
             {/* Github */}
             <a className="specialEffects" href="https://github.com/itsDannyKim" rel="noopener noreferrer" target="_blank">
-              <i className="fa fa-github-square" aria-hidden="true"/>
+              <MDBIcon fab icon="github" />
             </a>
 
             {/* Instagram */}
             <a className="specialEffects" href="https://www.instagram.com/itsdannykim/?hl=en" rel="noopener noreferrer" target="_blank">
-              <i className="fa fa-instagram" aria-hidden="true"/>
+              <MDBIcon fab icon="instagram" />
+              {/*<i className="fa fa-instagram" aria-hidden="true"/>*/}
             </a>
 
             {/* Twitter */}
             <a className="specialEffects" href="https://twitter.com/itsdannykim" rel="noopener noreferrer" target="_blank">
-              <i class="fa fa-twitter-square" aria-hidden="true"></i>
+              <MDBIcon fab icon="twitter" />
+              {/*<i class="fa fa-twitter-square" aria-hidden="true"></i>*/}
             </a>
 
-
+          </div>
           </div>
             </div>
           </Cell>

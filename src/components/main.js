@@ -16,5 +16,4 @@ const Main = () => (
     <Route path ="/resume" component={Resume} />
   </Switch>
 )
-
 export default Main;

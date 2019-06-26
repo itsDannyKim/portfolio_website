@@ -8,18 +8,20 @@ class About extends Component {
     return(
         <Grid className="aboutme-grid">
           <Cell col={7}>
-            <h1 style={{paddingLeft: '3em'}}>About Me</h1>
+            <div className="aboutme-head">
+            <h1 style={{fontWeight:'bold'}}><mark style={{backgroundColor:'black', color:'white',opacity: '.8'}}>About Me</mark></h1>
             <img
               src={pHeadshot}
               alt="pHeadshot"
-              style={{height: '360px', width: '360px',  paddingLeft: '10em', objectFit: 'contain'}}
+              style={{paddingTop: '20px', height: '450px', width: '450px', objectFit: 'contain'}}
               />
+            </div>
           </Cell>
           <Cell col={3}>
             <div className="aboutme-body">
             <h1>Who I am...</h1>
               <p>
-              Hi, my name is Danny Kim.
+              Hi, my name is <mark style={{color:'black', backgroundColor:'#FAEBD7', fontWeight:'bold'}}>Danny Kim.</mark>
               <br></br>
               <br></br>
               After graduating from Georgia State University with a
@@ -27,13 +29,13 @@ class About extends Component {
               help businesses and people succeed through technology.
               <br></br>
               <br></br>
-              I'm passionate about becoming the best version of yourself, physically and mentally.  In order to
+              I'm <mark style={{color:'black', backgroundColor:'#FAEBD7', fontStyle:'italic'}}>passionate</mark> about becoming the best version of yourself, physically and mentally.  In order to
               do that, I love pushing myself outside of my comfort zone and taking on challenging projects.  Coding this website
-              from scratch is one of those projects.
+              from <mark style={{color:'black', backgroundColor:'#FAEBD7', fontStyle:'italic'}}>scratch</mark> all the way from front-end to the back-end is one of those challenges.
 
               <br></br>
               <br></br>
-              Feel free to <Link to="/contact" style={{color: ' #5fc5ee', textDecoration: 'none', fontWeight:'bold'}}>connect</Link> with me to talk!
+              If you have any questions or want to have a conversation, feel free to <Link to="/contact" style={{color: '#8ce5f3  ', textDecoration: 'none', fontWeight:'bold'}}>connect</Link> with me to talk!
               <br></br>
               <br></br>
               </p>
