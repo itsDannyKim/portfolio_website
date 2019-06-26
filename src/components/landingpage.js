@@ -12,8 +12,7 @@ class Landing extends Component {
         <Grid className="landing-grid">
           <Cell col={12}>
           <img
-            data-src-600px={kimDanielHeadshot}
-            data-src-800px={kimDanielHeadshot}
+            src={kimDanielHeadshot}        
             alt="headshot"
             className="headshot-img"
           />
