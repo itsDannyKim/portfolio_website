@@ -8,18 +8,18 @@ import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBIcon } from 'mdbreact';
 class Landing extends Component {
   render() {
     return(
-      <div style={{width: '100%' , margin: 'auto'}}>
+      <div>
         <Grid className="landing-grid">
+
           <Cell col={12}>
           <img
-            src={kimDanielHeadshot}        
+            src={kimDanielHeadshot}
             alt="headshot"
             className="headshot-img"
           />
-
             <div className="banner-text">
             <a href="https://www.google.com/search?q=what+is+a+technology+consultant%3F&oq=what+is+a+technology+consultant%3F&aqs=chrome..69i57.2324j0j4&sourceid=chrome&ie=UTF-8" rel="noopener noreferrer" target="_blank">
-            <h1 style={{fontSize:'60px'}}>Full-Stack Software Engineer</h1></a>
+            <h1 style={{fontSize:'60px'}}>Technology Consultant</h1></a>
           <div className="bottom-text-padding">
             <hr/>
           <p>HTML/CSS | Javascript | Java | SQL | MongoDB | Express | ReactJS | NodeJS  </p>

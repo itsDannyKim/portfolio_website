@@ -1,38 +1,66 @@
-body {
+html {
+  height: 100%;
   margin: 0;
+}
+
+body {
+  margin: auto;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100%;
 }
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
-/* Tablet Landscape */
+/*
+
 @media screen and (max-width: 1060px) {
     #primary { width:67%; }
     #secondary { width:30%; margin-left:3%;}
 }
-/* Tabled Portrait */
+
 @media screen and (max-width: 768px) {
-    #primary { width:100%; }
-    #secondary { width:100%; margin:0; border:none; }
-}
-
-img { max-width: 100%; }
-
-
-@media (min-device-width:600px) {
-    img[data-src-600px] {
-        content: attr(data-src-600px, url);
+    .landing-grid {
+    width:100%;
+    float: none;
     }
-}
-@media (min-device-width:800px) {
-    img[data-src-800px] {
-        content: attr(data-src-800px, url);
+    #secondary {
+    width:100%;
+    margin:0;
+    border:none;
     }
+
 }
+
+@media screen and (max-width: 1000px) {
+  .projects-grid {
+     display: none;
+  }
+}
+
+
+@media(max-width:700px){
+    .grid{
+    display: grid;
+    grid-template-columns: 1fr repeat(2, minmax(auto,25em)) 1fr;
+    }
+
+    .banner-text{
+    columns: 2;
+    column-gap: 2em;
+    }
+
+    .content-wrap{
+    grid-column: 2/4;
+  }
+}
+
+overflow-y: scroll;
+*/
