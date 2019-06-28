@@ -6,19 +6,20 @@ import { Link } from 'react-router-dom';
 class About extends Component {
   render() {
     return(
-        <Grid className="aboutme-grid">
-          <Cell col={7}>
-            <div className="aboutme-head">
+      <div class="container-fluid" style={{}}>
+          <div class= "row justify-content-md-center" style={{paddingTop: '5vw'}}>
+            <div class="col-md-3 mr-5">
             <h1 style={{fontWeight:'bold'}}><mark style={{backgroundColor:'black', color:'white',opacity: '.8'}}>About Me</mark></h1>
             <img
+              className="pHeadshot-img"
               src={pHeadshot}
               alt="pHeadshot"
-              style={{paddingTop: '20px', height: '450px', width: '450px', objectFit: 'contain'}}
               />
             </div>
-          </Cell>
-          <Cell col={3}>
+            <div class="col-md-3">
             <div className="aboutme-body">
+
+            <br></br>
             <h1>Who I am...</h1>
               <p>
               Hi, my name is <mark style={{color:'black', backgroundColor:'#FAEBD7', fontWeight:'bold'}}>Danny Kim.</mark>
@@ -40,8 +41,9 @@ class About extends Component {
               <br></br>
               </p>
             </div>
-          </Cell>
-        </Grid>
+            </div>
+          </div>
+      </div>
     )
   }
 }

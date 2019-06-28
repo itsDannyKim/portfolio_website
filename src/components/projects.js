@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
+import { Tabs, Tab, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
 
 
 class Projects extends Component {
@@ -12,8 +12,11 @@ class Projects extends Component {
 
     if(this.state.activeTab === 0){
       return(
-        <div className="projects-grid" style={{height: '700px'}}>
+
+        <div class="row justify-content-md-center">
+
         {/* Project 1 */}
+        <div class="col-md-3 m-5">
         <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
           <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://i2.wp.com/www.andreasreiterer.at/wp-content/uploads/2017/11/react-logo.jpg?resize=825%2C510&ssl=1) center / cover'}}>Portfolio Website</CardTitle>
           <CardText>
@@ -23,9 +26,10 @@ class Projects extends Component {
             <Button colored href="https://github.com/itsDannyKim/portfolio_website" rel="noopener noreferrer" target="_blank" >GitHub</Button>
           </CardActions>
         </Card>
-
+        </div>
 
         {/* Project 2 */}
+        <div class="col-md-3 m-5">
         <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
           <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://i2.wp.com/www.andreasreiterer.at/wp-content/uploads/2017/11/react-logo.jpg?resize=825%2C510&ssl=1) center / cover'}}>ThingsToDo</CardTitle>
           <CardText>
@@ -35,8 +39,10 @@ class Projects extends Component {
             <Button colored href="https://github.com/itsDannyKim/todo_App" rel="noopener noreferrer" target="_blank" >GitHub</Button>
           </CardActions>
         </Card>
+        </div>
 
         {/* Project 3 */}
+        <div class="col-md-3 m-5">
         <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
           <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://i2.wp.com/www.andreasreiterer.at/wp-content/uploads/2017/11/react-logo.jpg?resize=825%2C510&ssl=1) center / cover'}}>DannyPhotography</CardTitle>
           <CardText>
@@ -47,12 +53,15 @@ class Projects extends Component {
           </CardActions>
         </Card>
         </div>
+        </div>
+
       )
     } else if(this.state.activeTab === 1) {
       return (
-        <div className="projects-grid" style={{height: '700px'}}>
+        <div class="row justify-content-md-center">
         {/* Project 1 */}
-        <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+          <div class="col px-md-5">
+        <Card shadow={5} style={{minWidth: '450', margin: 'auto', marginTop: '3rem'}}>
           <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://developer.apple.com/swift/images/swift-og.png) center / cover'}}>MyContacts</CardTitle>
           <CardText>
             A contacts application that allows you to add, delete, organize, and show the location of contacts on your phone
@@ -61,9 +70,11 @@ class Projects extends Component {
             <Button href="https://github.com/itsDannyKim/myContactList" rel="noopener noreferrer" target="_blank"  colored>GitHub</Button>
           </CardActions>
         </Card>
+        </div>
 
         {/* Project 2 */}
-        <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+          <div class="col px-md-5">
+        <Card shadow={5} style={{minWidth: '450', margin: 'auto', marginTop: '3rem'}}>
           <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://developer.apple.com/swift/images/swift-og.png) center / cover'}}>MyNotes</CardTitle>
           <CardText>
             A notes application that allows you to add, delete, and sort notes based on priority, date, and title
@@ -73,12 +84,14 @@ class Projects extends Component {
           </CardActions>
 
         </Card>
+        </div>
       </div>
       )
     } else if(this.state.activeTab === 2) {
       return (
-        <div className="projects-grid" style={{height: '700px'}}>
+        <div class="row justify-content-md-center">
         {/* Project 1 */}
+          <div class="col-md-3 m-5">
         <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
           <CardTitle style={{color: 'black', height: '136px', background: 'url(https://img.icons8.com/color/480/000000/java-coffee-cup-logo.png) center / cover', backgroundRepeat: 'no-repeat', backgroundSize: '150px'}}>Flights4U</CardTitle>
           <CardText >
@@ -89,9 +102,11 @@ class Projects extends Component {
           </CardActions>
 
         </Card>
+        </div>
 
 
         {/* Project 2 */}
+          <div class="col-md-3 m-5">
         <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
           <CardTitle style={{color: 'black', height: '176px', background: 'url(https://img.icons8.com/color/480/000000/java-coffee-cup-logo.png) center / cover', backgroundRepeat: 'no-repeat', backgroundSize: '150px'}}>MyContacts</CardTitle>
           <CardText>
@@ -101,8 +116,10 @@ class Projects extends Component {
             <Button colored href="https://github.com/itsDannyKim/androidContactList" rel="noopener noreferrer" target="_blank" >GitHub</Button>
           </CardActions>
         </Card>
+        </div>
 
         {/* Project 3 */}
+        <div class="col-md-3 m-5">
         <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
           <CardTitle style={{color: 'black', height: '176px', background: 'url(https://img.icons8.com/color/480/000000/java-coffee-cup-logo.png) center / cover', backgroundRepeat: 'no-repeat', backgroundSize: '150px'}}>MyMemo</CardTitle>
           <CardText>
@@ -113,6 +130,7 @@ class Projects extends Component {
           </CardActions>
         </Card>
         </div>
+        </div>
       )
     }
 
@@ -122,6 +140,7 @@ class Projects extends Component {
 
   render() {
     return(
+      <div class="container-fluid" style={{}}>
       <div className="category-tabs">
       <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
       <Tab style={{color:'white', fontWeight:'bold'}}>React</Tab>
@@ -129,12 +148,10 @@ class Projects extends Component {
       <Tab style={{color:'white', fontWeight:'bold'}}>Java</Tab>
       </Tabs>
 
-
-      <Grid>
-      <Cell col={12}>
+      <div class="row justify-content-md-center">
       <div className="content">{this.toggleCategories()}</div>
-      </Cell>
-      </Grid>
+      </div>
+      </div>
 
       </div>
     )

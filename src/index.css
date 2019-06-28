@@ -1,16 +1,22 @@
 html {
   height: 100%;
-  margin: 0;
+  width: 100%;
+  margin: 0px;
+  overflow-x: hidden;
+  padding: 0px;
 }
 
 body {
-  margin: auto;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 100%;
+  width: 100%;
+  margin: 0px;
+  overflow-x: hidden;
+  padding: 0px;
 }
 
 
@@ -18,6 +24,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+@media (max-width: 740px){
+    h1{
+        color:red
+    }
+}
+
 
 /*
 

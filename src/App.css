@@ -1,5 +1,20 @@
 
 /* Landing Page css*/
+.container-fluid {
+  background: #304352;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #d7d2cc, #304352);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #d7d2cc, #304352); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+  margin-left: 0px;
+  margin-right: 0px;
+  overflow-x: hidden;
+}
+
+
 .header-color {
   background: #304352;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #d7d2cc, #304352);  /* Chrome 10-25, Safari 5.1-6 */
@@ -14,35 +29,39 @@
   height: 100%;
 }
 
-.landing-grid {
+/*.landing-grid {
 
-  background: #304352;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #d7d2cc, #304352);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #d7d2cc, #304352); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #304352;
+  background: -webkit-linear-gradient(to left, #d7d2cc, #304352);
+  background: linear-gradient(to left, #d7d2cc, #304352);
   text-align: center;
   width: 100%;
   height: 100%;
 
-}
+}*/
 
-
-.landing-grid h1{
+.banner-text h1{
+  color: white;
+  font-size: 66px;
   text-shadow: 2px 2px 4px #073d45;
-  /*top: -200px;
-  margin-left: 4em;
-  margin-top: 4em;
-  margin-right: 4em; position: relative;*/
+  padding-top: 1.5vw;
+  padding: 5px;
+  margin: 0px auto 0px auto;
+  background-size: 50% auto;
+  position: relative;
   background: none;
   font-weight: bold;
   transition:color 0.8s ease;
+  text-align: center;
+  display: table;
 }
 
-.landing-grid h1::after{
+.banner-text h1::after{
 
-  /*==position: absolute;
+  position: absolute;
   top:0;
   left: 0;
-  width: 0;*/
+  width: 0;
   content: '';
   height: 100%;
   background-color: #5fc5ee;
@@ -52,29 +71,23 @@
 
 }
 
-.landing-grid h1:hover::after {
+.banner-text h1:hover::after {
 
   width: 100%;
 
 }
 
-.landing-grid h1:hover {
+.banner-text h1:hover {
 
   color: white;
   transition: transform 1s ease-out;
 
 }
 
-.bottom-text-padding {
-  /*position:relative;
-  top: -180px;*/
-}
-
-
-
 .headshot-img{
 
-  height: 17%;
+  height: 25rem;
+  width: 30rem;
   padding-top: 1em;
   padding-bottom: 1em;
   max-width: 100%;
@@ -87,22 +100,9 @@
   width: 75%;
   margin: auto;
   border-radius: 10px;
-  height: 18%;
-  padding-top: 1px;
-  display: grid;
+  height: 330px;
 }
 
-.banner-text h1 {
-  font-size: 66px;
-  font-weight: bold;
-  color: white;
-}
-
-.banner-text hr {
-  border-top: 5px dotted white;
-  width: 50%;
-  margin: auto;
-}
 
 .banner-text p {
   color: white;
@@ -123,85 +123,86 @@
 .social-links {
   display: flex;
   justify-content: space-between;
-  max-width: 50%;
-  width: auto;
-  margin: auto;
+  width: 60vw;
+  margin: .3vw;
+  padding-left: 15vw;
+
 }
 
 .social-links i {
   color: white;
-  font-size: 4em;
-  padding: 15%;
+  font-size: 3.8vw;
+  padding: 1vw;
   border: 2px solid white;
   border-radius:50%;
   opacity:1;
-  margin: auto;
-  background-size: auto;
+}
+
+/* Media Queries */
+
+@media (max-width: 740px) {
+    .banner-text h1{
+      color: white;
+      font-size: 3em;
+      text-shadow: 2px 2px 4px #073d45;
+      padding-top: 1.5vw;
+      padding: 5px;
+      margin: 0px auto 0px auto;
+      background-size: 50% auto;
+      position: relative;
+      background: none;
+      font-weight: bold;
+      transition:color 0.8s ease;
+      text-align: center;
+      display: table;
+    }
 }
 
 /* About Me Page CSS */
-.pheadshot-img {
-  height: 300px;
+.pHeadshot-img {
+  height: 28em;
+  margin-top: 1em;
+  objectFit: contain;
 }
 
-.aboutme-grid {
-  background: #304352;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #d7d2cc, #304352);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #d7d2cc, #304352); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-  text-align: center;
-  position: fixed;
-  left: 0;
-  width: 100%;
-  height: 100%;
-
-}
-
-.aboutme-grid h1 {
-
-  color: white;
-  transition: color 0.2s ease-out 0s;
-  font-size: 3.5em;
-
-}
-
-.aboutme-head {
-  position: relative;
-  left: 10%;
-  top: 4.8em;
-}
 .aboutme-body  {
-  position: relative;
-  top: 5em;
-  right: 20%;
   font-family: 'Roboto', sans-serif;
   color: white;
   background-color: black;
-  padding: 5%;
-  padding-bottom: 1px;
+  padding: .5rem;
   opacity: .8;
-  margin: auto;
   border-radius: 10px;
 }
 
 .aboutme-body h1 {
   font-family: 'Roboto', sans-serif;
   color: white;
-  font-size: 4em;
+  font-size: 3em;
 }
 
-.aboutme-grid p {
-  font-family: 'Roboto', sans-serif;
-  color: white;
-  font-size: 1.1em;
+
+/* media queries */
+@media (max-width: 740px) {
+    .aboutme-body {
+        margin-top: 5vw;
+        width: 70vw;
+        margin-left: 5vw;
+    }
 }
 
-.aboutme-grid hr{
-  border-top: 5px dotted white;
-  width: 50%;
-  margin: auto;
+/* Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {  }
+
+/* Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
 
 }
+
+/* Large devices (desktops, 992px and up)
+@media (min-width: 992px) { }
+
+/*  Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {  }
 
 /* projects page css */
 
@@ -224,6 +225,12 @@
 
 }
 
+.mdl-layout_content{
+  background: #304352;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #d7d2cc, #304352);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #d7d2cc, #304352); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 
 /* Contact Page */
 
@@ -237,6 +244,6 @@
 .formborder{
   border-radius: 25px;
   border: 2px solid white;
-  padding: 15px;
+  padding: 5rem;
 
 }

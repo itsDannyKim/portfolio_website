@@ -1,20 +1,19 @@
 import React, { Component } from 'react';
-import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBIcon } from 'mdbreact';
+import { MDBCol, MDBBtn, MDBIcon } from 'mdbreact';
 
 
 class Contact extends Component {
   render() {
     return(
 
-      <MDBContainer className="MDBcontainer-color" style={{paddingLeft: '500px', paddingTop: '100px', minWidth:'100%', width:'100%',
-      height:'100%', minHeight:'100%'}}>
-     <MDBRow>
-       <MDBCol md="7">
+      <div class="container-fluid" style={{paddingTop:'3rem'}}>
+      <div class= "row justify-content-md-center">
+       <MDBCol md="6" >
         <div className="formborder">
          <form action="/main.js" method="POST" name="contact" data-netlify="true"  data-netlify-honeypot="bot-field">
           <input type="hidden" name="form-name" value="contact" />
            <p className="h4 text-center mb-4" style={{color: 'white'}}>Let's Talk!</p>
-           <label htmlFor="defaultFormContactNameEx" className="white-text">
+           <label htmlFor="defaultFormContactNameEx" className="white-text" style={{float:'left'}}>
              Name
            </label>
            <input
@@ -23,7 +22,7 @@ class Contact extends Component {
              className="form-control"
            />
            <br />
-           <label htmlFor="defaultFormContactEmailEx" className="white-text">
+           <label htmlFor="defaultFormContactEmailEx" className="white-text" style={{float:'left'}}>
              Email
            </label>
            <input
@@ -35,6 +34,7 @@ class Contact extends Component {
            <label
              htmlFor="defaultFormContactSubjectEx"
              className="white-text"
+             style={{float:'left'}}
            >
              Subject
            </label>
@@ -42,11 +42,13 @@ class Contact extends Component {
              type="text"
              name="subject"
              className="form-control"
+             style={{float:'left'}}
            />
            <br />
            <label
              htmlFor="defaultFormContactMessageEx"
              className="white-text"
+             style={{float:'left', paddingTop:'1rem'}}
            >
              Message
            </label>
@@ -65,8 +67,8 @@ class Contact extends Component {
          </form>
         </div>
        </MDBCol>
-     </MDBRow>
-   </MDBContainer>
+  </div>
+  </div>
     )
   }
 }
