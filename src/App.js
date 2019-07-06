@@ -22,9 +22,9 @@ class App extends Component {
          background: 'linear-gradient(to left, #d7d2cc, #304352)'}}
          title={<Link style={{textDecoration: 'none', color: 'white', fontWeight: 'bold'}} to="/">My Portfolio</Link>}>
             <Navigation>
-              <a href="/aboutme" style={{fontWeight: 'bold', color: 'white'}}>About Me</a>
-              <a href="/projects" style={{fontWeight: 'bold', color: 'white'}}>Projects</a>
-              <a href="/contact" style={{fontWeight: 'bold', color: 'white'}}>Contact</a>
+              <Link to="/aboutme" style={{fontWeight: 'bold', color: 'white'}}>About Me</Link>
+              <Link to="/projects" style={{fontWeight: 'bold', color: 'white'}}>Projects</Link>
+              <Link to="/contact" style={{fontWeight: 'bold', color: 'white'}}>Contact</Link>
             </Navigation>
         </Drawer>
         <Content>
