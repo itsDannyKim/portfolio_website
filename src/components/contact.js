@@ -10,7 +10,7 @@ class Contact extends Component {
       <div class= "row justify-content-md-center">
        <MDBCol md="6" >
         <div className="formborder">
-         <form name="contact" method="POST"  data-netlify="true"  data-netlify-honeypot="bot-field">
+         <form name="contact" method="POST" action="https://amazing-ride-7b247f.netlify.com" data-netlify="true"  data-netlify-honeypot="bot-field">
           <input type="hidden" name="form-name" value="contact" />
            <p className="h4 text-center mb-4" style={{color: 'white'}}>Let's Talk!</p>
            <label htmlFor="defaultFormContactNameEx" className="white-text" style={{float:'left'}}>
