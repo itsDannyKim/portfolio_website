@@ -10,7 +10,7 @@ class Contact extends Component {
       <div class= "row justify-content-md-center">
        <MDBCol md="6" >
         <div className="formborder">
-         <form action="/main.js" method="POST" name="contact" data-netlify="true"  data-netlify-honeypot="bot-field">
+         <form action="/components/success.js"   method="POST" name="contact" data-netlify="true"  data-netlify-honeypot="bot-field">
           <input type="hidden" name="form-name" value="contact" />
            <p className="h4 text-center mb-4" style={{color: 'white'}}>Let's Talk!</p>
            <label htmlFor="defaultFormContactNameEx" className="white-text" style={{float:'left'}}>
@@ -59,11 +59,12 @@ class Contact extends Component {
              rows="3"
            />
            <div className="text-center mt-4">
-             <MDBBtn color="warning" outline type="submit">
-               Send
-               <MDBIcon far icon="paper-plane" className="ml-2" />
-             </MDBBtn>
-           </div>
+              <MDBBtn color="warning" outline type="submit">
+                Send
+                <MDBIcon far icon="paper-plane" className="ml-2" />
+              </MDBBtn>
+            </div>
+            <div data-netlify-recaptcha="true"></div>
          </form>
         </div>
        </MDBCol>
