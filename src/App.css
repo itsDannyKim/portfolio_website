@@ -170,9 +170,11 @@
 
 /* About Me Page CSS */
 .pHeadshot-img {
-  height: 28em;
+  height: auto;
+  width: auto;
   margin-top: 1em;
   objectFit: contain;
+  max-width: 100%;
 }
 
 .aboutme-body  {
@@ -199,6 +201,16 @@
         margin-left: 5vw;
     }
 }
+
+@media (min-width: 740px) {
+  .pHeadshot-img {
+    height: 28em;
+    margin-top: 1em;
+    objectFit: contain;
+  }
+}
+
+
 
 /* Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {  }
